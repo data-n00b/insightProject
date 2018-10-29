@@ -37,8 +37,8 @@ trueSort now returns the sorted list with a mutated third variable which is the 
 Finally `outputWrite` is called to take the list returned by trueSort and print them to a file.  
 
 #### Assumed Pre-conditions
-*Input is a single file that is named h1b_input.csv placed in the input folder
-*Only two output files of the specified name are to be generated.
+* Input is a single file that is named h1b_input.csv placed in the input folder
+* Only two output files of the specified name are to be generated.
 
 ### Remarks
 The program can be exented to a modular approach by changing the top N statistics required. New variables can also be defined for other factors like the name of the company that applied. It can also be extended to let the program sequentially take in input files for each year and genrate output files for the respective years. The code has passed the test provided in the `h1b_statistics` repo.
