@@ -1,5 +1,5 @@
 # Arvind's Insight H1B Project
-# Table of Contents
+### Table of Contents
 1. [Problem](README.md#problem)
 2. [Approach](README.md#approach)
 3. [Testing](README.md#testing)
