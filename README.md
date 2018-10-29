@@ -44,6 +44,7 @@ Finally `outputWrite` is called to take the list returned by trueSort and print 
 #### Assumed Pre-conditions
 * Input is a single file that is named h1b_input.csv placed in the input folder
 * Only two output files of the specified name are to be generated.
+* The empty output folder exists before the program is executed.
 
 ### Testing
 The default tests provided with the `h1b_statistics` repo have been implemented and the current output folder contains the files that are the output of the test file. The function has been tested to work on the datastes provides on the Drive folder as well.
