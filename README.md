@@ -25,6 +25,7 @@ Following the problem statement, the code takes in one csv file as input from th
 `trueSorted` helper function that takes the dictionary of all State/Occupations and number in each and returns a list of 3 element tuples sorted by value and then by alphabet if the values are the same.  
 `outputWrite` helper function that takes the header for the specific output file, the path to save it in and the list of 3 element tuples to write to the file.  
 
+#### Program Flow
 The program reads in the input file from the input folder, loops through and save each row as a list of lists. The column names are then extracted from the list and compared against the required measures of `STATUS`, `SOC CODE` and `WORKSITE STATE` to return the column index of the records.
 
 The count of each occupation and state that are certified are then mapped to a dictionary as a key value pair.  
@@ -38,3 +39,6 @@ Finally `outputWrite` is called to take the list returned by trueSort and print 
 #### Assumed Pre-conditions
 *Input is a single file that is named h1b_input.csv placed in the input folder
 *Only two output files of the specified name are to be generated.
+
+### Remarks
+The program can be exented to a modular approach by changing the top N statistics required. New variables can also be defined for other factors like the name of the company that applied. It can also be extended to let the program sequentially take in input files for each year and genrate output files for the respective years. The code has passed the test provided in the `h1b_statistics` repo.
