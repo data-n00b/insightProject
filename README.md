@@ -1,4 +1,4 @@
-# Arvind's Insight H1B Project
+## Arvind's Insight H1B Project
 ### Table of Contents
 1. [Problem](README.md#problem)
 2. [Approach](README.md#approach)
