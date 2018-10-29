@@ -46,6 +46,6 @@ Finally `outputWrite` is called to take the list returned by trueSort and print 
 * Only two output files of the specified name are to be generated.
 
 ### Testing
-The default tests provided with the `h1bstatistics` repo have been implemented and the current output folder contains the files that are the output of the test file. The function has been tested to work on the datastes provides on the Drive folder as well.
+The default tests provided with the `h1b_statistics` repo have been implemented and the current output folder contains the files that are the output of the test file. The function has been tested to work on the datastes provides on the Drive folder as well.
 ### Remarks
 The program can be exented to a modular approach by changing the top N statistics required. New variables can also be defined for other factors like the name of the company that applied. It can also be extended to let the program sequentially take in input files for each year and genrate output files for the respective years. The code has passed the test provided in the `h1b_statistics` repo.
