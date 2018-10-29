@@ -28,7 +28,13 @@ Following the problem statement, the code takes in one csv file as input from th
 The program reads in the input file from the input folder, loops through and save each row as a list of lists. The column names are then extracted from the list and compared against the required measures of `STATUS`, `SOC CODE` and `WORKSITE STATE` to return the column index of the records.
 
 The count of each occupation and state that are certified are then mapped to a dictionary as a key value pair.  
-The helper function `trueSort` is now called. trueSort takes a dictionary input. It first strips the *""* around the keys in the dictionary to facilitate error free sorting. The cleaned dictionary is initially sorted by descending order of values upto the top 10 records. The `lenUniqe` and `lenAll` variables capture the length of the dictionary 
+The helper function `trueSort` is now called. trueSort takes a dictionary input. It first strips the *""* around the keys in the dictionary to facilitate error free sorting. The cleaned dictionary is initially sorted into a list of 2 element tuples by descending order of values upto the top 10 records. The `lenUniqe` and `lenAll` variables capture the length of the unique values and total length of the sorted list.  
+If there are multiple keys with the same value, trueSorted now sorts the entire list by alphabetical order and then loops through each tuple with the same value and sorts them by alphabetical order and thus modifies the sorted list. If all values are unique the sorted list is not modified.  
+
+trueSort now returns the sorted list with a mutated third variable which is the percentage of certified applications compared to the overall.  
+
+Finally `outputWrite` is called to take the list returned by trueSort and print them to a file.  
+
 #### Assumed Pre-conditions
 *Input is a single file that is named h1b_input.csv placed in the input folder
 *Only two output files of the specified name are to be generated.
